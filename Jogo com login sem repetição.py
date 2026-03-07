@@ -55,13 +55,9 @@ if cert == print('Login realizada com sucesso!'):
 import random
 
 
-
-
 #========= Nome do jogo =========
 
 print('🎮 Jogo de Adivinhação\U0001F3AF!')
-
-
 
 #====== Pegando dificuldade =======
 

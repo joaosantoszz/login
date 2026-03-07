@@ -1,7 +1,7 @@
 #======= inicio =====
 print('CADASTRE-SE aqui!')
 tentativas = 0
-#========Pegando o usuário e a senha=======
+#======== Pegando o usuário e a senha =======
 while True:
     usuario = input('Crie um nome de usuário: ').strip()
     senha = input('Crie uma senha: ').strip()
@@ -12,7 +12,7 @@ while True:
         print('-' * 30)
         print('Senhas diferente! Tente novamente!')
         
-#=======mensagem=======
+#======= Mensagem de boas-vindas =======
 print('Parabéns! Agora você tem uma conta!')
 print('-' *  35)
 print('Login abaixo')
@@ -32,14 +32,16 @@ while True:
         print('-' * 30)
         print('Senha ou Usuário incorreto! Tente novamente!')
         print(f'Você fez {tentativas} tentativas de 3')
-#=========Fim=======
+
+#========= Fim do programa de login =======
+
 if tentativas == 3:
     print('Conta bloqueada!')
     print('Motivo: Atingiu o limite de tentativas!')
 else:
     cert = print('Login realizada com sucesso!')
 
-#=======Fim do código=======
+#======= Fim do código de Login =======
 
 #======= inicio do jogo de advinhação =======
 if cert == print('Login realizada com sucesso!'):
@@ -49,29 +51,29 @@ if cert == print('Login realizada com sucesso!'):
     print('Agora você tem acesso ao jogo de advinhação!')
 
 
-#=====Biblioteca=====
+#===== Biblioteca de random=====
 import random
 
 
 
 
-#=========Nome=========
+#========= Nome do jogo =========
 
 print('🎮 Jogo de Adivinhação\U0001F3AF!')
 
 
 
-#======Pegando dificuldade=======
+#====== Pegando dificuldade =======
 
 print('1️⃣ Fácil 2️⃣ Médio 3️⃣ Difícil ')
 d = str(input('Qual dificuldade você deseja: ').strip())
 
 
 
-#=====Variavel para tentativas=====
+#===== Variavel para tentativas =====
 t = 0
 
-#=====Sobre as dificuldades=====
+#===== Sobre as dificuldades =====
 
 if d == '1':
     f = random.randint(1, 10)
@@ -82,7 +84,7 @@ elif d == '2':
 elif d == '3':
     f = random.randint(1, 100)
 
-#Guardando a dificuldade
+#======= Guardando a dificuldade ========
 
 if d == '1':
     limite = '10'
@@ -92,7 +94,7 @@ elif d == '3':
     limite = '100'
 
 
-#=====Para funcionarr=====
+#===== Funcionamento do jogo =====
 
 while True:
     p = int(input("🕵️ Descubra o número secreto entre 1 e {}: ".format(limite)))
@@ -110,7 +112,7 @@ while True:
     else:
          print('Você errou! Tente novamente!')
 
-#=====Clasificação======
+#===== Guardando a classificação ======
 
 if t == 1:
     c = 'Excelente'
@@ -125,7 +127,7 @@ else:
     c = 'Ruim'
 
 
-#=====Fim=====
+#===== Fim do jogo =====
 
 print('🎯Você conseguiu em {} tentativas!'.format(t))
 print("⭐ Classificação: {}".format(c))

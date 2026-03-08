@@ -59,27 +59,26 @@ import random
 
 print('🎮 Jogo de Adivinhação\U0001F3AF!')
 
-#====== Pegando dificuldade =======
-
-print('1️⃣ Fácil 2️⃣ Médio 3️⃣ Difícil ')
-d = str(input('Qual dificuldade você deseja: ').strip())
-
-
 
 #===== Variavel para tentativas =====
 t = 0
 
-#===== Sobre as dificuldades =====
+#====== Pegando dificuldade e colocando pra funcionar =======
 
-if d == '1':
-    f = random.randint(1, 10)
-
-elif d == '2':
-    f = random.randint(1, 50)
-
-elif d == '3':
-    f = random.randint(1, 100)
-
+while True:
+    print('1️⃣ Fácil 2️⃣ Médio 3️⃣ Difícil ')
+    d = str(input('Qual dificuldade você deseja: ').strip())
+    if d == '1':
+        f = random.randint(1, 10)
+        break
+    elif d == '2':
+        f = random.randint(1, 50)
+        break
+    elif d == '3':
+        f = random.randint(1, 100)
+        break
+    else:
+        print('Escolha somente essas opções!')
 #======= Guardando a dificuldade ========
 
 if d == '1':
